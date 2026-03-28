@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IntelligentCloud Application Catalog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Intelligent Cloud Application Catalog</h1>
+
+<h2>Add Application</h2>
+
+<input id="name" placeholder="App Name">
+<input id="category" placeholder="Category">
+<input id="version" placeholder="Version">
+<input id="dependencies" placeholder="Dependencies">
+<input id="tags" placeholder="Tags">
+
+<button onclick="addApp()">Add Application</button>
+
+<h2>Search</h2>
+
+<input id="searchBox" placeholder="Search App">
+<button onclick="searchApp()">Search</button>
+
+
+<h2>Filter Applications</h2>
+
+<input id="filterCategory" placeholder="Category">
+<button onclick="filterApps()">Filter</button>
+
+
+<h2>Applications</h2>
+
+<button onclick="loadApps()">Show All Apps</button>
+
+<ul id="appList"></ul>
+
+
+<h2>Update Application</h2>
+
+<input id="updateId" placeholder="App ID">
+<button onclick="updateApp(document.getElementById('updateId').value)">Update</button>
+
+
+<h2>Delete Application</h2>
+
+<input id="deleteId" placeholder="App ID">
+<button onclick="deleteApp(document.getElementById('deleteId').value)">Delete</button>
+
+
+<h2>Recommend Applications</h2>
+
+<input id="recommendCategory" placeholder="Category">
+<button onclick="recommendApps()">Recommend</button>
+
+<ul id="recommendList"></ul>
+
+
+<h2>User Recommendation</h2>
+
+<input id="userid" placeholder="User ID">
+<button onclick="userRecommend()">Get Recommendation</button>
+
+
+<br><br>
+
+<a href="dashboard.html">Go to Analytics Dashboard</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
